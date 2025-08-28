@@ -1,0 +1,13 @@
+require('dotenv').config();
+
+const appKey = process.env.APP_KEY;
+
+if (!appKey) {
+  console.error("⚠️ No App Key found! Check your .env file.");
+  process.exit(1);
+}
+
+console.log("✅ App Key loaded successfully:", appKey);
+
+
+
